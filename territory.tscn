@@ -1,3 +1,12 @@
 [gd_scene format=3 uid="uid://iotbpyripnex"]
 
+[ext_resource type="Script" uid="uid://bietu0luuju5c" path="res://territory.gd" id="1_5op02"]
+
 [node name="Area2D" type="Area2D" unique_id=12465043]
+script = ExtResource("1_5op02")
+
+[node name="Polygon2D" type="Polygon2D" parent="." unique_id=1053129339]
+polygon = PackedVector2Array(0, -50, 43, -25, 43, 25, 0, 50, -43, 25, -43, -25)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=965520128]
+polygon = PackedVector2Array(-43, 25, 0, 50, 43, 25, 43, -25, 0, -50, -43, -25)
